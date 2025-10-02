@@ -15,7 +15,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-20">
           <div className="w-48 h-48 relative rounded-full overflow-hidden bg-gray-200 flex-shrink-0">
             <Image
               src="/daniel-mcgrane.jpg"
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
 
         {/* App Showcase Section */}
-        <section className="mb-12">
+        <section className="mb-20">
           <h3 className="text-2xl font-bold text-gray-900 mb-8">
             App Portfolio
           </h3>

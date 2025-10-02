@@ -65,12 +65,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* App Showcase Section */}
+        {/* App Portfolio Section */}
         <section className="mb-20">
           <h3 className="text-2xl font-bold text-gray-900 mb-8">
             App Portfolio
           </h3>
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-16 mb-12">
+
+          {/* ZBD Project */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-16 mb-16">
             <div className="relative flex-shrink-0">
               {/* Phone Frame */}
               <div className="bg-black rounded-[2.5rem] p-2 shadow-2xl">
@@ -89,7 +91,7 @@ export default function Home() {
                         </div>
                       </div>
                     )}
-                    
+
                     <video
                       className={`w-full h-full object-cover transition-opacity duration-300 ${
                         videoLoaded ? "opacity-100" : "opacity-0"
@@ -100,7 +102,10 @@ export default function Home() {
                       playsInline
                       onLoadedData={() => setVideoLoaded(true)}
                     >
-                      <source src="https://x3z4n4wdmnyoq1dn.public.blob.vercel-storage.com/ScreenRecording_10-02-2025%2009-42-53_1.mp4" type="video/mp4" />
+                      <source
+                        src="https://x3z4n4wdmnyoq1dn.public.blob.vercel-storage.com/ScreenRecording_10-02-2025%2016-21-47_1%281%29%282%29.mp4"
+                        type="video/mp4"
+                      />
                       Your browser does not support the video tag.
                     </video>
                   </div>
@@ -108,16 +113,38 @@ export default function Home() {
               </div>
             </div>
 
-            {/* App Details */}
+            {/* ZBD Details */}
             <div className="flex-1 text-center lg:text-left lg:pl-8">
               <h4 className="text-2xl font-bold text-gray-800 mb-4">
                 ZBD | The Bitcoin Rewards App
               </h4>
+
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Earn Bitcoin Reward by playing games to taking surveys to
-                completing Quests, we have tons of fun ways to earn free cash
-                rewards.
+                ZBD is a Series B fintech startup building Bitcoin payments and
+                rewards products.
               </p>
+
+              {/* Key Metrics */}
+              <div className="mb-6">
+                <ul className="space-y-2 text-gray-600 text-left">
+                  <li className="flex items-start">
+                    <span className="text-black mr-2">•</span>
+                    Scaled to$10M Revenue from Bitcoin rewards platform
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-black mr-2">•</span>
+                    50K Daily Active Users with high engagement
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-black mr-2">•</span>
+                    1M+ Total Users across iOS and Android
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-black mr-2">•</span>
+                    Increased rating from 3.4★ to 4.6★
+                  </li>
+                </ul>
+              </div>
 
               {/* Tech Stack */}
               <div className="mb-8">
@@ -132,19 +159,16 @@ export default function Home() {
                     TypeScript
                   </span>
                   <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
+                    React/Next.js
+                  </span>
+                  <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
                     Supabase
                   </span>
                   <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
-                    Node.js
+                    Redux/MobX
                   </span>
                   <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
                     React Query
-                  </span>
-                  <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
-                    Redux
-                  </span>
-                  <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
-                    Figma
                   </span>
                 </div>
               </div>
@@ -181,6 +205,93 @@ export default function Home() {
                   </svg>
                   Google Play
                 </a>
+              </div>
+            </div>
+          </div>
+
+          {/* AAVE Project */}
+          <div className="border-t border-gray-200 pt-16">
+            <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start gap-16">
+              <div className="relative flex-shrink-0">
+                {/* Monitor Frame */}
+                <div className="bg-gray-800 rounded-2xl p-3 shadow-2xl">
+                  <div className="bg-gray-700 rounded-xl p-2">
+                    {/* Monitor Stand */}
+                    <div className="relative">
+                      <div
+                        className="relative bg-white rounded-lg overflow-hidden"
+                        style={{ width: "400px", height: "250px" }}
+                      >
+                        <Image
+                          src="/aave-interface.jpg"
+                          alt="AAVE DeFi Protocol Interface"
+                          width={400}
+                          height={250}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                      {/* Monitor Stand Base */}
+                      <div className="mt-2 flex justify-center">
+                        <div className="w-24 h-2 bg-gray-600 rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex-1 text-center lg:text-left lg:pr-8">
+                <h4 className="text-2xl font-bold text-gray-800 mb-4">
+                  AAVE | DeFi dApp
+                </h4>
+
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Built the frontend interface for AAVE's decentralized finance
+                  protocol, enabling users to lend, borrow, and earn interest on
+                  cryptocurrency assets.
+                </p>
+
+                {/* Key Metrics */}
+                <div className="mb-6">
+                  <ul className="space-y-2 text-gray-600 text-left">
+                    <li className="flex items-start">
+                      <span className="text-black mr-2">•</span>
+                      $15B+ Total Value Locked in lending protocol
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-black mr-2">•</span>
+                      400K+ Monthly active wallets on platform
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-black mr-2">•</span>
+                      25+ Supported cryptocurrency assets
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-black mr-2">•</span>
+                      99.9% Frontend uptime and reliability
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Tech Stack */}
+                <div className="mb-8">
+                  <h5 className="text-lg font-semibold text-gray-700 mb-4">
+                    Built With
+                  </h5>
+                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
+                      React
+                    </span>
+                    <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
+                      JavaScript
+                    </span>
+                    <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
+                      HTML/CSS
+                    </span>
+                    <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
+                      Ethereum
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -267,138 +378,6 @@ export default function Home() {
           </div>
         </section>
         */}
-
-        {/* Experience Section */}
-        <section id="experience" className="mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Experience</h3>
-
-          {/* ZBD */}
-          <div className="mb-10">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-              <h4 className="text-xl font-semibold text-gray-800">ZBD</h4>
-              <span className="text-gray-600 font-medium">2021 - Present</span>
-            </div>
-
-            <div className="mb-6">
-              <h5 className="text-lg font-medium text-gray-700 mb-3">
-                Senior React Native Engineer
-              </h5>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Owned end-to-end delivery of a full-stack rewards platform
-                  from zero to $10M+ with React and Next.js
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Architected the React Native app with a focus on UX,
-                  performance and scalability
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Collaborated with product, design and compliance in Figma to
-                  shape requirements and scope features
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Streamlined QA and CI/CD pipelines to accelerate releases
-                  while maintaining a high standard
-                </li>
-              </ul>
-            </div>
-
-            <div className="mb-6">
-              <h5 className="text-lg font-medium text-gray-700 mb-3">
-                React Engineer
-              </h5>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Built full-stack apps using TypeScript, React / React Native,
-                  Next.js, Redux, Node.js, Express, Hono Supabase, AWS, Vercel,
-                  EAS and Cloudflare
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Managed frontend state with Redux, MobX, and Context API
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Built and managed a component library with Storybook
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Integrated third-party APIs for payments and KYC/compliance
-                  workflows
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Built CI/CD pipelines running API and E2E tests using Jest,
-                  Detox and Prowler
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Morrow */}
-          <div className="mb-10">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-              <h4 className="text-xl font-semibold text-gray-800">Morrow</h4>
-              <span className="text-gray-600 font-medium">2019 - 2021</span>
-            </div>
-
-            <div className="mb-6">
-              <h5 className="text-lg font-medium text-gray-700 mb-3">
-                React Engineer
-              </h5>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Built greenfield, brownfield and legacy B2B apps using
-                  Typescript, React / React Native across diverse projects from
-                  ag-tech to fashion ecommerce
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  State management with Mobx and Redux
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Styled UIs and built component libraries with CSS, Styled
-                  Components and Storybook
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Wrote unit tests with Jest and React Testing Library
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* AAVE */}
-          <div className="mb-10">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-              <h4 className="text-xl font-semibold text-gray-800">AAVE</h4>
-              <span className="text-gray-600 font-medium">2018 - 2019</span>
-            </div>
-
-            <div className="mb-6">
-              <h5 className="text-lg font-medium text-gray-700 mb-3">
-                Frontend Developer
-              </h5>
-              <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Built a responsive app with HTML, CSS, JavaScript, and React
-                </li>
-                <li className="flex items-start">
-                  <span className="text-black mr-2">•</span>
-                  Version control with Git and Github
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* Footer */}

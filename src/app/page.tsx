@@ -245,7 +245,7 @@ export default function Home() {
                 </h4>
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Built the frontend interface for AAVE's decentralized finance
+                  Built the frontend interface for AAVE&apos;s decentralized finance
                   protocol, enabling users to lend, borrow, and earn interest on
                   cryptocurrency assets.
                 </p>

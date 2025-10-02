@@ -165,7 +165,7 @@ export default function Home() {
                     Supabase
                   </span>
                   <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
-                    Redux/MobX
+                    Redux
                   </span>
                   <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
                     React Query
@@ -245,9 +245,8 @@ export default function Home() {
                 </h4>
 
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Built the frontend interface for AAVE&apos;s decentralized finance
-                  protocol, enabling users to lend, borrow, and earn interest on
-                  cryptocurrency assets.
+                  Decentralized finance protocol and dApp, enabling users to
+                  lend, borrow, and earn interest on cryptocurrency assets.
                 </p>
 
                 {/* Key Metrics */}
@@ -255,15 +254,7 @@ export default function Home() {
                   <ul className="space-y-2 text-gray-600 text-left">
                     <li className="flex items-start">
                       <span className="text-black mr-2">•</span>
-                      $15B+ Total Value Locked in lending protocol
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-black mr-2">•</span>
                       400K+ Monthly active wallets on platform
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-black mr-2">•</span>
-                      25+ Supported cryptocurrency assets
                     </li>
                     <li className="flex items-start">
                       <span className="text-black mr-2">•</span>
@@ -288,7 +279,7 @@ export default function Home() {
                       HTML/CSS
                     </span>
                     <span className="bg-black text-white text-sm px-3 py-2 rounded-full font-medium">
-                      Ethereum
+                      Web3.js
                     </span>
                   </div>
                 </div>

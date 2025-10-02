@@ -129,7 +129,7 @@ export default function Home() {
                 <ul className="space-y-2 text-gray-600 text-left">
                   <li className="flex items-start">
                     <span className="text-black mr-2">•</span>
-                    Scaled to$10M Revenue from Bitcoin rewards platform
+                    Scaled to $10M Revenue from Bitcoin rewards platform
                   </li>
                   <li className="flex items-start">
                     <span className="text-black mr-2">•</span>
